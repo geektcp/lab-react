@@ -1,5 +1,10 @@
 import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
-import router from "@/router";
+import router from "./router";
+// import Home from './component/Home.jsx';
+// import Tab1 from './component/Tab1.jsx';
+// import Tab2 from './component/Tab2.jsx';
+// import Tab3 from './component/Tab3.jsx';
+
 
 var React = require('react');
 
