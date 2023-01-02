@@ -6,9 +6,11 @@ class App extends React.Component {
     }
 
     render() {
-        return <div>
-            我是tab1
-        </div>;
+        return (
+            <div>
+                我是tab1
+            </div>
+        );
     }
 }
 
