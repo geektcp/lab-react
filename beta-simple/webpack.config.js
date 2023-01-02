@@ -2,7 +2,7 @@
 const path = require('path')
 
 module.exports = {
-    context: path.resolve(__dirname, './'),
+    context: path.resolve(__dirname, './beta-simple'),
     resolve: {
         extensions: ['.js', '.vue', '.json'],
         alias: {
