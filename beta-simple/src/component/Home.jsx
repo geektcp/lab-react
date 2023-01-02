@@ -11,9 +11,15 @@ class Home extends React.Component {
         return (
             <div>
                 <ul role="nav">
-                    <li><Link to="/">tab1</Link></li>
-                    <li><Link to="/tab2">tab2</Link></li>
-                    <li><Link to="/tab3">tab3</Link></li>
+                    <li>
+                        <Link to="/">tab1</Link>
+                    </li>
+                    <li>
+                        <Link to="/tab2">tab2</Link>
+                    </li>
+                    <li>
+                        <Link to="/tab3">tab3</Link>
+                    </li>
                 </ul>
                 父组件
                 {this.props.children}

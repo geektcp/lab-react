@@ -9,9 +9,11 @@ class App extends React.Component {
     }
 
     render() {
-        return <div>
-            我是message {this.state.match.params.id}
-        </div>;
+        return (
+            <div>
+                我是message {this.state.match.params.id}
+            </div>
+        );
     }
 }
 
