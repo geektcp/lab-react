@@ -1,115 +1,12 @@
-import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
-import router from "./router";
-import Home from './component/Home.jsx';
-import Tab1 from './component/Tab1.jsx';
-import Tab2 from './component/Tab2.jsx';
-import Tab3 from './component/Tab3.jsx';
-import example1 from './view/example1.jsx';
-
-
-var React = require('react');
+import Router from "./router";
+import React from 'react';
 
 class App extends React.Component {
-    constructor() {
-        super();
-    }
-
     render() {
         return (
-            <BrowserRouter>
-                <Home>
-                    <Route path="/" component={Tab1}/>
-                    <Route path="/tab2" component={Tab2}/>
-                    <Route path="/tab3" component={Tab3}/>
-                    <Route path="/example1" component={example1}/>
-                </Home>
-
-            </BrowserRouter>
+            <Router />
         );
     }
 }
 
-
-// const App = props => {
-//
-//     // 解构 route
-//     function renderRoutes(router, contextPath) {
-//         const children = []
-//
-//         const renderRoute = (item, routeContextPath) => {
-//             let newContextPath = item.path ? `${routeContextPath}/${item.path}` : routeContextPath;
-//             newContextPath = newContextPath.replace(/\/+/g, '/');
-//
-//             if (!item.component) return;
-//
-//             if (item.childRoutes) {
-//                 const childRoutes = renderRoutes(item.childRoutes, newContextPath);
-//                 children.push(
-//                     <Route
-//                         key={newContextPath}
-//                         render={props => <item.component {...props}>{childRoutes}</item.component>}
-//                         path={newContextPath}
-//                     />
-//                 );
-//                 item.childRoutes.forEach(r => renderRoute(r, newContextPath))
-//             } else {
-//                 children.push(<Route key={newContextPath} component={item.component} path={newContextPath} exact />)
-//             }
-//         };
-//
-//         router.forEach(item => renderRoute(item, contextPath));
-//
-//         return <Switch>{children}</Switch>;
-//     }
-//
-//     const children = renderRoutes(router, '/');
-//     return (
-//         <BrowserRouter>
-//             {children}
-//             {/*<PublicComponent />*/}
-//         </BrowserRouter>)
-// }
-
-// function renderRoutes(router, contextPath) {
-//     const children = []
-//
-//     const renderRoute = (item, routeContextPath) => {
-//         let newContextPath = item.path ? `${routeContextPath}/${item.path}` : routeContextPath;
-//         newContextPath = newContextPath.replace(/\/+/g, '/');
-//
-//         if (!item.component) return;
-//
-//         if (item.childRoutes) {
-//             const childRoutes = renderRoutes(item.childRoutes, newContextPath);
-//             children.push(
-//                 <Route
-//                     key={newContextPath}
-//                     render={props => <item.component {...props}>{childRoutes}</item.component>}
-//                     path={newContextPath}
-//                 />
-//             );
-//             item.childRoutes.forEach(r => renderRoute(r, newContextPath))
-//         } else {
-//             children.push(<Route key={newContextPath} component={item.component} path={newContextPath} exact />)
-//         }
-//     };
-//
-//     router.forEach(item => renderRoute(item, contextPath));
-//
-//     return <Switch>{children}</Switch>;
-// }
-//
-// class App extends React.Component {
-//     constructor() {
-//         super();
-//     }
-//
-//     render() {
-//         const children = renderRoutes(router, '/');
-//         return (
-//             <BrowserRouter>
-//                 {children}
-//             </BrowserRouter>)
-//     }
-// }
 export default App;
