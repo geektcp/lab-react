@@ -1,3 +1,4 @@
+import React, {Suspense, lazy} from 'react';
 import Home from '../component/Home.jsx';
 import Tab1 from '../component/Tab1.jsx';
 import Tab2 from '../component/Tab2.jsx';
@@ -9,10 +10,10 @@ export default {
     name: 'home',
     component: "",
     childRouter: [
-        {path: '/',         component: () => import(Home)},
-        {path: '/example',  component: () => import('../view/example1.jsx')},
-        {path: '/tab1',  component: () => import(Tab1)},
-        {path: '/tab2',  component: () => import(Tab2)},
-        {path: '/tab3',  component: () => import(Tab3)},
+        {path: '/', component: lazy(() => import(Home))},
+        {path: '/example', component:  lazy(() => import('../view/example1.jsx'))},
+        {path: '/tab1', component:  lazy(() => import(Tab1))},
+        {path: '/tab2', component:  lazy(() => import(Tab2))},
+        {path: '/tab3', component:  lazy(() => import(Tab3))},
     ]
 }
