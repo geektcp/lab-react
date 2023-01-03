@@ -20,6 +20,9 @@ class Home extends React.Component {
                     <li>
                         <Link to="/tab3">tab3</Link>
                     </li>
+                    <li>
+                        <Link to="/example1">example1</Link>
+                    </li>
                 </ul>
                 父组件
                 {this.props.children}

@@ -7,5 +7,6 @@ function example1(props) {
             <p className='p-cont'>开始使用变量 </p>
         </h2>
     )
+    return contHtml;
 }
 export default example1;
