@@ -15,16 +15,25 @@ class Layout extends React.Component {
             <div>
                 <ul role="nav">
                     <li>
-                        <Link to="/">tab1</Link>
+                        <Link to="/">/</Link>
                     </li>
                     <li>
-                        <a href="/tab2">tab2</a>
+                        <Link to="/admin/tab1">tab1</Link>
                     </li>
                     <li>
-                        <Link to="/tab3">tab3</Link>
+                        <a href="/admin/tab2">tab2</a>
                     </li>
                     <li>
-                        <Link to="/example1">example1</Link>
+                        <Link to="/admin/tab3">tab3</Link>
+                    </li>
+                    <li>
+                        <Link to="/admin/example1">example1</Link>
+                    </li>
+                    <li>
+                        <Link to="/web/about">about</Link>
+                    </li>
+                    <li>
+                        <Link to='/web/*'>*</Link>
                     </li>
                 </ul>
                 父组件

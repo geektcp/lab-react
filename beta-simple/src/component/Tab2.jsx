@@ -12,10 +12,10 @@ class App extends React.Component {
         return (
             <div>
                 我是tab2
-                <Link to="/tab2/messages/233">
+                <Link to="/admin/tab2/messages/233">
                     click msg
                 </Link>
-                <Route path="/tab2/messages/:id" component={Message}>
+                <Route path="/admin/messages/:id" component={Message}>
 
                 </Route>
             </div>

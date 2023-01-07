@@ -1,13 +1,23 @@
-
-import Layout from '@/layout/web'
+import Layout from '../layout/Layout';
 import React, {Suspense, lazy} from 'react';
+import aboutPage from '../view/about';
+import errorPage from '../component/404';
 
 export default {
-  path: '/',
-  name: 'web',
-  component: Layout,
-  childRoutes: [
-    { path: '/about', component: lazy(() => import('../view/about')) },
-    { path: '*', component: lazy(() => import('../component/404')) },
-  ],
+    name: 'web',
+    path: '/web',
+    component: Layout,
+    childRouter: [
+        {
+            name: 'about',
+            auto: true,
+            path: '/about',
+            component: aboutPage
+        },
+        {
+            name: '*',
+            auto: true,
+            path: '/*',
+            component: errorPage},
+    ],
 }

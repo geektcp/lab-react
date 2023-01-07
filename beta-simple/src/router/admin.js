@@ -8,8 +8,8 @@ import Layout from '../layout/Layout';
 
 
 export default {
-    path: '/',
     name: 'admin',
+    path: '/admin',
     component: Layout,
     childRouter: [
         {

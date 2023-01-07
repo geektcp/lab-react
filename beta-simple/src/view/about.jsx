@@ -1,6 +1,6 @@
 import React from 'react';
 
-function example1(props) {
+function about(props) {
     return (
         <h2>
             <p>I m geektcp! </p>
@@ -8,4 +8,4 @@ function example1(props) {
     )
 }
 
-export default example1;
+export default about;
