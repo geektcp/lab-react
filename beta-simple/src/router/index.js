@@ -13,15 +13,11 @@ const routerList = [
 class Router extends Component {
     generateRoute(rootPath, ele) {
         var absolutePath;
-
-        console.log(JSON.stringify(rootPath))
         if (rootPath === '/') {
             absolutePath = ele.path;
         } else {
             absolutePath = rootPath + ele.path;
         }
-
-        console.log(JSON.stringify(absolutePath))
         if (ele.childRouter) {
             if (ele.component) {
                 return (
