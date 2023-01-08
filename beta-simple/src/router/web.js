@@ -16,7 +16,7 @@ export default {
         {
             name: '*',
             auto: true,
-            path: '/*',
+            path: '/error',
             component: errorPage},
     ],
 }

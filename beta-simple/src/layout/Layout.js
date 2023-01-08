@@ -33,7 +33,7 @@ class Layout extends React.Component {
                         <Link to="/web/about">about</Link>
                     </li>
                     <li>
-                        <Link to='/web/*'>*</Link>
+                        <Link to='/web/error'>error</Link>
                     </li>
                 </ul>
                 父组件
