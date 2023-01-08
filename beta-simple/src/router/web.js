@@ -1,5 +1,4 @@
 import Layout from '../layout/Layout';
-import React, {Suspense, lazy} from 'react';
 import aboutPage from '../view/about';
 import errorPage from '../component/404';
 
