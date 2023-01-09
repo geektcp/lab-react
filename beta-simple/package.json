@@ -1,5 +1,5 @@
 {
-  "name": "react-init",
+  "name": "beta-simple",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -22,12 +22,20 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "webpack": "^5.64.4",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "workbox-webpack-plugin": "^6.4.1",
+    "html-webpack-plugin": "^5.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "start": "node script/start.js",
+    "build": "node script/build.js",
+    "eject": "node script/test.js",
+    "startR": "react-scripts start",
+    "buildR": "react-scripts build",
+    "ejectR": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
